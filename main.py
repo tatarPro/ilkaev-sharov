@@ -3,7 +3,7 @@ from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
 @app.route("/")
-@app.route("/base")
+@app.route("/index")
 def index():
     user = "User"
     return render_template('index.html', title='Главная', username=user)
