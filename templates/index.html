@@ -1,43 +1,138 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Главная</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Илькаев, Шаров</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Переключатель навигации">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Главная</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Статьи</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Биржа</a>
-        </li>
-          <li class="nav-item">
-          <a class="nav-link" href="#">Разместить резюме</a>
-        </li>
-           <li class="nav-item">
-          <a class="nav-link" href="#">Контакты</a>
-        </li>
-           <li class="nav-item">
-          <a class="nav-link" href="#">Разработчики</a>
-        </li>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Биржа труда</title>
+    <!-- Подключение Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+
+</head>
+<body>
+
+    <!-- Навигационная панель -->
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#">Илькаев, Шаров</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a  style='color:black'  class="nav-link" href="#">Главная</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/stati">Статьи</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/birza">Биржа</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/rezume">Разместить резюме</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/contact">Контакты</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/razrab">Разработчики</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+  <section class="py-5 text-center container">
+    <div class="row py-lg-5">
+      <div class="col-lg-6 col-md-8 mx-auto">
+        <h1 class="fw-light">Биржа труда</h1>
+        <p class="lead text-body-secondary">Биржа труда — это организация или платформа, которая выступает посредником между работодателями и соискателями работы. Основная цель биржи труда — помочь людям найти работу, а работодателям — найти подходящих сотрудников. Биржи труда могут быть государственными или частными, и они предоставляют услуги как для работодателей, так и для людей, ищущих работу.</p>
+        <p>
+          <a href="/rezume" class="btn btn-primary my-2">Разместить резюме</a>
+          <a href="/birza" class="btn btn-secondary my-2">Посмотреть объявления</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <div class="album py-5 bg-body-tertiary">
+    <div class="container">
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col">
+          <div class="card shadow-sm">
+            <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="https://avatars.mds.yandex.net/i?id=2a8663c4146942deb03f73c2dd83cf2a9b695403-12544827-images-thumbs&n=13" role="img">
+            <div class="card-body">
+              <p class="card-text">Ищешь новую работу или желаешь поменять карьеру? Наши эксперты помогут тебе найти лучшее предложение! Открой тысячи актуальных вакансий от проверенных работодателей. Зарегистрируйся на бирже труда прямо сейчас и сделай шаг к успешному будущему!</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+
+                </div>
+                <small class="text-body-secondary">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="https://avatars.mds.yandex.net/i?id=49c062140e47000dcb23ccbb9318529669a9ab83-4572087-images-thumbs&n=13" role="img">
+            <div class="card-body">
+              <p class="card-text">У вас открытые вакансии? Привлекайте квалифицированных специалистов с нашей биржей труда! Мы помогаем работодателям найти нужных людей быстро и эффективно. Разместите свою вакансию сегодня и получите отклики от лучших кандидатов!</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+
+                </div>
+                <small class="text-body-secondary">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="https://avatars.mds.yandex.net/i?id=30c2d60bd661299062e776596f03082a49ec70a9-8497211-images-thumbs&n=13" role="img">
+            <div class="card-body">
+              <p class="card-text">Ты только что окончил учебное заведение и не знаешь, где искать работу? Наша биржа труда — это твой шанс начать карьеру мечты! Мы предложим вакансии для выпускников и молодых специалистов, поможем с составлением резюме и подготовкой к собеседованию.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+
+                </div>
+                <small class="text-body-secondary">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+      </div>
     </div>
   </div>
-</nav>
+ <footer class="main-footer bg-dark text-white py-4 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <ul class="nav">
+                        <li class="nav-item"><a href="/index" class="nav-link text-white">Главная</a></li>
+                        <li class="nav-item"><a href="/stati" class="nav-link text-white">Статьи</a></li>
+                        <li class="nav-item"><a href="/birza" class="nav-link text-white">Биржа</a></li>
+                        <li class="nav-item"><a href="/contact" class="nav-link text-white">Контакты</a></li>
+                        <li class="nav-item"><a href="/razrab" class="nav-link text-white">Разработчики</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p>&copy; 2024 ООО "Биржа труда". Все права защищены.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-  </body>
+    <!-- Подключение Bootstrap JS и jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
 </html>

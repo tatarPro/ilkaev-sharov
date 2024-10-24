@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты</title>
+    <!-- Подключение Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Хедер с панелью навигации -->
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#">Илькаев, Шаров</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/index">Главная</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/stati">Статьи</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/birza">Биржа</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/rezume">Разместить резюме</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/contact">Контакты</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/razrab">Разработчики</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Основной контент -->
+    <main class="container mt-5">
+        <div class="row">
+            <!-- Адрес -->
+            <div class="col-md-6 mb-4">
+                <h2>Наш адрес</h2>
+                <p><strong>Биржа труда</strong></p>
+                <p>г. Сургут, ул. Пушкина, 10, офис 21</p>
+                <p>Телефон: +7 (495) 123-45-67</p>
+                <p>Email: info@birzatruda.ru</p>
+            </div>
+
+            <!-- Карта -->
+            <div class="col-md-6 mb-4">
+                <h2>Мы на карте</h2>
+                <!-- Вставка карты Google -->
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1974.5227749350108!2d73.40862498312238!3d61.26221597567457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4373976a631803a5%3A0x214f79e37e273d62!2z0KHRg9GA0LPRg9GC0YHQutC40Lkg0L_QvtC70LjRgtC10YXQvdC40YfQtdGB0LrQuNC5INC60L7Qu9C70LXQtNC2LCDRjdC90LXRgNCz0LXRgtC40YfQtdGB0LrQvtC1INC-0YLQtNC10LvQtdC90LjQtQ!5e0!3m2!1sru!2sru!4v1729749048912!5m2!1sru!2sru"
+                        width="100%"
+                        height="400"
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Футер -->
+     <footer class="main-footer bg-dark text-white py-4 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <ul class="nav">
+                        <li class="nav-item"><a href="/index" class="nav-link text-white">Главная</a></li>
+                        <li class="nav-item"><a href="/stati" class="nav-link text-white">Статьи</a></li>
+                        <li class="nav-item"><a href="/birza" class="nav-link text-white">Биржа</a></li>
+                        <li class="nav-item"><a href="/contact" class="nav-link text-white">Контакты</a></li>
+                        <li class="nav-item"><a href="/razrab" class="nav-link text-white">Разработчики</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p>&copy; 2024 ООО "Биржа труда". Все права защищены.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Подключение Bootstrap JS и Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
